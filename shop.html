@@ -1,0 +1,260 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop | Glow Beauty & Laser Aesthetic Spa</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ruby-pink: #b1125a;
+      --gold: #c9a24d;
+      --white: #ffffff;
+      --dark: #1a1a1a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--white);
+      color: var(--dark);
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #eee;
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img { height: 55px; }
+
+    nav ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    nav a:hover { color: var(--ruby-pink); }
+
+    .shop-hero {
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('shop-hero.jpg') center/cover no-repeat;
+      padding: 100px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .shop-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(206, 11, 92, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover { transform: translateY(-10px); }
+
+    .product-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 25px;
+      text-align: center;
+    }
+
+    .product-info h3 {
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: var(--ruby-pink);
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .product-info a {
+      display: inline-block;
+      padding: 12px 30px;
+      background: var(--gold);
+      color: #fff;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      padding: 60px 20px;
+      margin-top: 80px;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    footer h4 { color: var(--gold); margin-bottom: 20px; }
+
+    footer a { color: #ddd; text-decoration: none; display: block; margin-bottom: 10px; }
+
+    footer a:hover { color: var(--gold); }
+
+    @media(max-width:768px){
+      .shop-hero h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo"><img src="Pictures/Elegant Gold shiny Logo design, 24 hours delivery, Makeup Logo, Salon Logo, Nails Logo, Realtor Logo, Brows Logo, Branding.jpg" alt="Keke's Beauty"></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="appointment.html">Book Now</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="shop-hero">
+  <h1>Glow Beauty Products</h1>
+</section>
+
+<section class="container">
+  <div class="products">
+
+    <!-- PRODUCT CATEGORIES -->
+
+<!-- SERUMS -->
+<section class="product-category">
+  <h2>Serums</h2>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="Pictures/Medicube PDRN PINK PEPTIDE SERUM - Serum - -.jpg" alt="Luxury Facial Serum">
+      <div class="product-info">
+        <h3>Luxury Facial Serum</h3>
+        <div class="price">R850.00</div>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOTIONS & CREAMS -->
+<section class="product-category">
+  <h2>Lotions & Creams</h2>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="Pictures/[W CONCEPT].jpg" alt="Glow Moisturizer">
+      <div class="product-info">
+        <h3>Glow Moisturizer</h3>
+        <div class="price">R650.00</div>
+        <a href="cart.html" class="btn">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOAPS & OTHER -->
+<section class="product-category">
+  <h2>Soaps & Other</h2>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="Pictures/Soothing Oat Bath Salts _ BrambleBerry.jpg" alt="Brow Aftercare Kit">
+      <div class="product-info">
+        <h3>Brow Aftercare Kit</h3>
+        <div class="price">R450.00</div>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEA & SUPPLEMENTS -->
+<section class="product-category">
+  <h2>Tea & Supplements</h2>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="Pictures/HealandHerb - Etsy.jpg" alt="Detox Herbal Tea">
+      <div class="product-info">
+        <h3>Detox Herbal Tea</h3>
+        <div class="price">R320.00</div>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div>
+      <h4>Glow Beauty & Laser Aesthetic Spa</h4>
+      <p>Premium skincare & beauty essentials.</p>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <a href="#">All Products</a>
+      <a href="#">Skincare</a>
+      <a href="#">Brow Care</a>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <a href="#">Contact</a>
+      <a href="#">Returns</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

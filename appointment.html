@@ -1,0 +1,182 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Appointment |  Glow Beauty & Laser Aesthetic Spa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ruby-pink: #c2185b;
+      --gold: #d4af37;
+      --white: #ffffff;
+      --dark: #2b2b2b;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fafafa;
+      color: var(--dark);
+    }
+
+    .booking-container {
+      max-width: 700px;
+      margin: 60px auto;
+      background: var(--white);
+      border-radius: 14px;
+      padding: 40px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      color: var(--ruby-pink);
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #777;
+      margin-bottom: 35px;
+    }
+
+    form {
+      display: grid;
+      grid-gap: 20px;
+    }
+
+    label {
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-family: inherit;
+      font-size: 14px;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--ruby-pink);
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      background: linear-gradient(135deg, var(--ruby-pink), var(--gold));
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 50px;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(194,24,91,0.3);
+    }
+
+    .note {
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="booking-container">
+    <h1>Book Your Appointment</h1>
+    <p class="subtitle">Glow begins the moment you book ✨</p>
+
+    <form action="#" method="post">
+
+      <div class="row">
+        <div>
+          <label>Full Name</label>
+          <input type="text" name="name" placeholder="Your full name" required>
+        </div>
+
+        <div>
+          <label>Phone Number</label>
+          <input type="tel" name="phone" placeholder="e.g. 071 234 5678" required>
+        </div>
+      </div>
+
+      <div>
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="you@example.com">
+      </div>
+
+      <div>
+        <label>Select Service</label>
+        <select name="service" required>
+          <option value="">-- Choose a service --</option>
+          <option>Facial Treatment</option>
+          <option>Carbon Laser Facial</option>
+          <option>IV Drip Therapy</option>
+          <option>Body Enhancement (Bum / Hips / Breast)</option>
+          <option>Laser Hair Removal</option>
+          <option>Skin Tag Removal</option>
+          <option>Teeth Whitening</option>
+          <option>Ionic Foot Detox</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <div>
+          <label>Preferred Date</label>
+          <input type="date" name="date" required>
+        </div>
+
+        <div>
+          <label>Preferred Time</label>
+          <input type="time" name="time" required>
+        </div>
+      </div>
+
+      <div>
+        <label>Additional Notes (Optional)</label>
+        <textarea name="notes" placeholder="Any special requests or concerns?"></textarea>
+      </div>
+
+      <button type="submit">Confirm Appointment</button>
+
+      <p class="note">
+        One of our specialists will contact you to confirm your booking.
+      </p>
+
+    </form>
+  </div>
+
+</body>
+</html>
